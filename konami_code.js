@@ -8,6 +8,14 @@ function init() {
 
     if (code[index] === key) {
       index++
+
+      if (code.length === index) {
+        alert('Hurray!')
+
+        index = 0
+      }
+    } else {
+      index = 0
     }
   })
 
